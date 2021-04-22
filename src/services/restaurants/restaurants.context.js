@@ -32,6 +32,7 @@ export const RestaurantsContextProvider = ({ children }) => {
         });
     }, 2000);
   };
+
   useEffect(() => {
     if (location) {
       const locationString = `${location.lat},${location.lng}`;
