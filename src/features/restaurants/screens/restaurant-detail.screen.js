@@ -5,7 +5,7 @@ import { List } from "react-native-paper";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 
-import { SafeArea } from "../../../components/utils/safe-area.component";
+import { SafeArea } from "../../../components/utils/safe-area.components";
 import { OrderButton } from "../components/restaurant-list.styles";
 import { CartContext } from "../../../services/cart/cart.context";
 
@@ -73,7 +73,7 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
           mode="contained"
           onPress={() => {
             addToCart({ item: "special", price: 1299 }, restaurant);
-            navigation.natigate("Checkout");
+            navigation.navigate("Checkout");
           }}
         >
           Order Special Only 12.99!

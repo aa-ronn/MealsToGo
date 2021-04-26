@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { ScrollView } from "react-native";
 import { List } from "react-native-paper";
 
 import { Text } from "../../../components/typography/text.component";
 import { Spacer } from "../../../components/spacer/spacer.component";
-import { SafeArea } from "../../../components/utils/safe-area.component";
+import { SafeArea } from "../../../components/utils/safe-area.components";
 
 import { CartContext } from "../../../services/cart/cart.context";
 
