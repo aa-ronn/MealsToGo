@@ -6,7 +6,6 @@ import {
   restaurantsRequest,
   restaurantsTransform,
 } from "./restaurants.service";
-import { FavouritesContext } from "../favourites/favourites.context";
 
 export const RestaurantsContext = createContext();
 
@@ -15,7 +14,6 @@ export const RestaurantsContextProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const { location } = useContext(LocationContext);
-  const { favourites } = useContext(FavouritesContext);
 
   const retrieveRestaurants = (loc) => {
     setIsLoading(true);
@@ -24,7 +22,7 @@ export const RestaurantsContextProvider = ({ children }) => {
     restaurantsRequest(loc)
       .then(restaurantsTransform)
       .then((results) => {
-        console.log(results);
+        setError(null);
         setIsLoading(false);
         setRestaurants(results);
       })
