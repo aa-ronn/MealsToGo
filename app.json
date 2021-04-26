@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "MealsToGo",
-    "slug": "MealsToGo",
+    "name": "Aaron's MealsToGo",
+    "slug": "AA-MTG",
     "version": "0.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
