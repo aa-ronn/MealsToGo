@@ -86,7 +86,6 @@ export const SettingsScreen = ({ navigation }) => {
             )}
             onPress={() => null}
           />
-          {colors.ui.error}
           <Spacer />
           <SettingsItem
             title="Past Orders"
