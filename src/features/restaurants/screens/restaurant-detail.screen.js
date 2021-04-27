@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { ScrollView } from "react-native";
-import { List } from "react-native-paper";
+import { List, Divider } from "react-native-paper";
 
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
@@ -29,8 +29,10 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
           onPress={() => setBreakfastExpanded(!breakfastExpanded)}
         >
           <List.Item title="Eggs Benedict" />
+          <Divider />
           <List.Item title="Classic Breakfast" />
         </List.Accordion>
+        <Divider />
 
         <List.Accordion
           title="Lunch"
@@ -39,9 +41,12 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
           onPress={() => setLunchExpanded(!lunchExpanded)}
         >
           <List.Item title="Burger w/ Fries" />
+          <Divider />
           <List.Item title="Steak Sandwich" />
+          <Divider />
           <List.Item title="Mushroom Soup" />
         </List.Accordion>
+        <Divider />
 
         <List.Accordion
           title="Dinner"
@@ -50,9 +55,12 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
           onPress={() => setDinnerExpanded(!dinnerExpanded)}
         >
           <List.Item title="Spaghetti Bolognese" />
+          <Divider />
           <List.Item title="Veal Cutlet with Chicken Mushroom Rotini" />
+          <Divider />
           <List.Item title="Steak Frites" />
         </List.Accordion>
+        <Divider />
 
         <List.Accordion
           title="Drinks"
@@ -61,9 +69,13 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
           onPress={() => setDrinksExpanded(!drinksExpanded)}
         >
           <List.Item title="Coffee" />
+          <Divider />
           <List.Item title="Tea" />
+          <Divider />
           <List.Item title="Modelo" />
+          <Divider />
           <List.Item title="Coke" />
+          <Divider />
           <List.Item title="Fanta" />
         </List.Accordion>
       </ScrollView>
